@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Fetch Terraform code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Dineshkumar07dk/terraform-poc.git'
+                git branch: 'main', url: 'https://github.com/AJAY-POC/terraform.git'
             }
         }
         
@@ -36,7 +36,7 @@ pipeline {
         
         stage('Fetch K8s CLusterSetupcode') {
             steps {
-                git branch: 'master', url: 'https://github.com/Dineshkumar07dk/Ansible.git'
+                git branch: 'master', url: 'https://github.com/AJAY-POC/Ansible.git'
             }
         }
         
@@ -68,7 +68,7 @@ pipeline {
         
         stage('Fetch kubernetes Manifest Files') {
             steps {
-                git branch: 'main', url: 'https://github.com/Dineshkumar07dk/kubernetes-poc.git'
+                git branch: 'main', url: 'https://github.com/AJAY-POC/k8.git'
             }
         }
         
